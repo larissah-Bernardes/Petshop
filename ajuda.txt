@@ -1,0 +1,22 @@
+AJUDA - AMIGO PET
+
+1. Como abrir o site
+   Abra o arquivo index.html em um navegador (Google Chrome, Firefox, Edge etc.).
+   Depois de publicado no GitHub Pages, basta acessar o endereço do site.
+
+2. Navegação
+   No cabeçalho, use os links para ir diretamente às seções Acessórios, Rações,
+   Higiene e limpeza, Serviços e Contato.
+
+3. Produtos
+   O site apresenta dois produtos em cada categoria. Cada produto contém imagem,
+   descrição e preço ilustrativo.
+
+4. Serviços
+   A seção Serviços apresenta banho e tosa sem tele-busca e banho e tosa com
+   tele-busca, com descrição e valor inicial.
+
+5. Observação sobre esta fase
+   Esta é a Fase 1 do projeto. A página foi construída com HTML, sem CSS,
+   Bootstrap ou funções JavaScript. Os links servem para navegação entre seções;
+   não há carrinho de compras nem agendamento nesta etapa.
