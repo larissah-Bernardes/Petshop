@@ -1,0 +1,77 @@
+/* Estilos gerais do Amigo Pet - Fase 2 */
+:root {
+    --pet-primary: #176b5b;
+    --pet-primary-dark: #104c42;
+    --pet-accent: #f5b544;
+    --pet-bg: #fffaf2;
+    --pet-text: #26332f;
+}
+html { scroll-behavior: smooth; scroll-padding-top: 82px; }
+body {
+    margin: 0;
+    padding-top: 66px;
+    background: var(--pet-bg);
+    color: var(--pet-text);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+.navbar { background: var(--pet-primary-dark); }
+.navbar-brand { letter-spacing: .3px; }
+.nav-link { color: #fff !important; }
+.nav-link:hover, .nav-link:focus { color: var(--pet-accent) !important; }
+.skip-link {
+    position: absolute; left: -9999px; top: 8px; z-index: 2000;
+    background: #fff; color: #000; padding: 10px 14px;
+}
+.skip-link:focus { left: 8px; }
+.hero-section {
+    padding: 78px 0;
+    background: linear-gradient(120deg, #e4f3e9, #fff4dc);
+}
+.hero-section h1 { color: var(--pet-primary-dark); font-size: clamp(2.4rem, 5vw, 4rem); font-weight: 800; }
+.eyebrow { color: var(--pet-primary); font-size: .82rem; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; }
+.hero-image { width: 100%; max-height: 390px; object-fit: cover; border-radius: 28px; box-shadow: 0 16px 40px #173d3020; }
+.btn-primary { background: var(--pet-primary); border-color: var(--pet-primary); }
+.btn-primary:hover, .btn-primary:focus { background: var(--pet-primary-dark); border-color: var(--pet-primary-dark); }
+.section-space { padding-top: 68px; padding-bottom: 20px; }
+.section-heading { margin-bottom: 28px; }
+.section-heading h2 { color: var(--pet-primary-dark); font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 800; }
+.carousel-photo { height: 360px; object-fit: cover; filter: brightness(.72); }
+.carousel-caption { bottom: 2.5rem; text-shadow: 0 2px 5px #000; }
+.carousel-caption h2 { font-weight: 800; }
+.product-card, .service-card {
+    height: 100%; background: #fff; border-radius: 18px; overflow: hidden;
+    box-shadow: 0 8px 28px #183b2b12; transition: transform .2s ease, box-shadow .2s ease;
+}
+.product-card:hover, .service-card:hover { transform: translateY(-4px); box-shadow: 0 14px 32px #183b2b20; }
+.product-card img { width: 100%; height: 220px; object-fit: cover; }
+.product-card h3, .service-card h3 { color: var(--pet-primary-dark); font-size: 1.2rem; font-weight: 700; }
+.product-card strong { color: var(--pet-primary); font-size: 1.1rem; }
+.services-section { background: #eaf4ed; }
+.service-card { padding: 32px; text-align: center; }
+.service-icon { display: block; font-size: 2.7rem; margin-bottom: 12px; }
+.booking-form {
+    max-width: 960px; margin: 0 auto; padding: clamp(20px, 4vw, 42px);
+    background: #fff; border-radius: 22px; box-shadow: 0 10px 35px #183b2b14;
+}
+.booking-form fieldset { border: 1px solid #dce8df; border-radius: 14px; padding: 22px; margin-bottom: 26px; }
+.booking-form legend { float: none; width: auto; padding: 0 8px; color: var(--pet-primary-dark); font-size: 1.2rem; font-weight: 800; }
+.form-label { font-weight: 700; }
+.form-control:focus, .form-select:focus, .form-check-input:focus { border-color: var(--pet-primary); box-shadow: 0 0 0 .2rem #176b5b25; }
+.form-check-input:checked { background-color: var(--pet-primary); border-color: var(--pet-primary); }
+.form-note { color: #5c6862; font-size: .9rem; }
+.site-footer { margin-top: 70px; padding: 42px 0; background: var(--pet-primary-dark); color: #fff; text-align: center; }
+.site-footer h2 { font-weight: 800; }
+:focus-visible { outline: 3px solid #d58a00; outline-offset: 3px; }
+@media (max-width: 576px) {
+    .hero-section { padding: 48px 0; }
+    .carousel-photo { height: 260px; }
+    .carousel-caption { bottom: 1rem; }
+    .carousel-caption h2 { font-size: 1.2rem; }
+    .carousel-caption p { font-size: .9rem; margin-bottom: 0; }
+    .booking-form fieldset { padding: 16px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+}
