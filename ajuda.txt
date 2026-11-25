@@ -1,22 +1,51 @@
-AJUDA - AMIGO PET
+AJUDA - AMIGO PET - FASE 2
 
 1. Como abrir o site
-   Abra o arquivo index.html em um navegador (Google Chrome, Firefox, Edge etc.).
-   Depois de publicado no GitHub Pages, basta acessar o endereço do site.
+   Abra o arquivo index.html em um navegador atualizado (Google Chrome,
+   Firefox, Microsoft Edge etc.). É necessário ter conexão com a internet
+   para carregar o Bootstrap e as imagens externas. Depois de publicado no
+   GitHub Pages, acesse o endereço público do projeto.
 
 2. Navegação
-   No cabeçalho, use os links para ir diretamente às seções Acessórios, Rações,
-   Higiene e limpeza, Serviços e Contato.
+   O menu superior permite acessar as seções Acessórios, Rações, Higiene,
+   Serviços e Agendamento. Em telas menores, o menu pode ser aberto pelo
+   botão de navegação.
 
 3. Produtos
-   O site apresenta dois produtos em cada categoria. Cada produto contém imagem,
-   descrição e preço ilustrativo.
+   O site mantém as categorias e os produtos da Fase 1: acessórios, rações
+   e higiene e limpeza. As imagens possuem descrições no atributo alt.
 
-4. Serviços
-   A seção Serviços apresenta banho e tosa sem tele-busca e banho e tosa com
-   tele-busca, com descrição e valor inicial.
+4. Carrossel
+   A página inicial possui um carrossel Bootstrap com três destaques.
+   Utilize as setas ou os indicadores para trocar as imagens.
 
-5. Observação sobre esta fase
-   Esta é a Fase 1 do projeto. A página foi construída com HTML, sem CSS,
-   Bootstrap ou funções JavaScript. Os links servem para navegação entre seções;
-   não há carrinho de compras nem agendamento nesta etapa.
+5. Serviços
+   O petshop apresenta banho, tosa e a opção de banho e tosa. Os valores
+   são ilustrativos e podem variar conforme o porte e a pelagem do animal.
+
+6. Cadastro e agendamento
+   Na seção Cadastro e agendamento, preencha os dados do cliente e do pet.
+   Escolha o serviço (banho, tosa ou banho e tosa), a modalidade (tele-busca
+   ou levar e buscar no petshop), a data e um dos horários disponíveis.
+   O formulário possui validação de campos obrigatórios, máscara simples
+   para CPF e telefone e não permite selecionar datas passadas.
+   O atendimento está configurado de forma demonstrativa, de segunda a
+   sábado, com horários entre 09h e 17h.
+
+7. Acessibilidade
+   As imagens possuem atributo alt com texto descritivo; os campos possuem
+   rótulos associados; há link para pular diretamente ao conteúdo principal,
+   foco visível na navegação e identificação acessível dos controles.
+
+8. Observação importante
+   Este é um projeto acadêmico front-end. O formulário valida os dados no
+   próprio navegador e exibe uma confirmação demonstrativa. Ele não envia,
+   salva ou agenda efetivamente os dados em um servidor. Para agendamentos
+   reais seria necessário integrar um serviço de back-end.
+
+9. Arquivos do projeto
+   index.html       - estrutura e conteúdo da página.
+   css/style.css    - estilos visuais e adaptação para telas menores.
+   js/script.js     - validação, máscaras, horários e funções temporais.
+   ajuda.txt        - este guia de utilização.
+   README.md        - apresentação e instruções do projeto.
